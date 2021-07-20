@@ -1,1 +1,41 @@
-test
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="dist/css/styles.css" media=”screen”/>
+        <script src="dist/js/scripts.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+
+          <!-- Slides -->
+          <div class="mySlides">
+            <img src="photos/alvborgsbron/a.JPG" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <img src="photos/chalmers_bibliotek/a.JPG" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+          
+          <div class="row">
+            <!-- Thumbnails-->
+            <div class="column">
+              <img class="demo cursor" src="photos/alvborgsbron/a.JPG" style="width:100%" onclick="currentSlide(1)" alt="test">
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="photos/chalmers_bibliotek/a.JPG" style="width:100%" onclick="currentSlide(2)" alt="test">
+            </div>
+          </div>
+        </div>
+    </body>
+
+</html>
