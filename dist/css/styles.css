@@ -65,14 +65,6 @@ body {
     top: 0;
   }
   
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
   .row:after {
     content: "";
     display: table;
@@ -82,7 +74,7 @@ body {
   /* Six columns side by side */
   .column {
     float: left;
-    width: 16.66%;
+    width: 10%;
   }
   
   /* Add a transparency effect for thumnbail images */
