@@ -1,5 +1,3 @@
-var fs = require('fs');
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,12 +25,57 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function addPhotos() {
-  var files = fs.readdirSync('photos');
-  alert(files)
+function addPhotos(places) {
+  var baseUrl = "https://raw.githubusercontent.com/harisont/postcards-from-gothenburg/master/photos/";
+  places.forEach(place => {
+    var side = "a";
+    var imgUrl = baseUrl + place + "/" + side + ".jpg";
+    
+    // add big postcard
+    var aSideImg = document.createElement("img");
+    aSideImg.src = imgUrl;
+    aSideImg.className = "side";
+    var postcard = document.createElement("div");
+    postcard.className = "mySlides";
+    postcard.appendChild(aSideImg);
+    document.getElementById("gallery").appendChild(postcard); 
+
+    // add thumbnail
+    var thumbImg = document.createElement("img");
+    thumbImg.src = imgUrl;
+    thumbImg.className = "demo cursor thumb";
+    var thumbnail = document.createElement("div");
+    thumbnail.className = "column";
+    thumbnail.appendChild(thumbImg);
+    document.getElementById("previews").appendChild(thumbnail); 
+  });
 }
 
 function main() {
-  addPhotos();
+  // these are directory names and need to be kept updated. They are here to
+  // iterate through images because "good" old js doesn't have access to the
+  // filesystem... apparently
+  var places = [
+    "alvborgsbron",
+    //"gamlestadens_resecentrum_och_varldslitteraturhus",
+    //"johanneberg_science_park",
+    "lyktan",
+    "chalmers_bibliotek",
+    "garda_fabriker",
+    //"kuggen",
+    "molndalsfallen",
+    //"eriksberg",
+    //"gotaverkens_kranar",
+    "kvibergs_kasermer",
+    //"radisson_blu",
+    "gamlestadens_cykelparkering",
+    //"gothia_towers",
+    //"lindholmen_science_park",
+    //"sveriges_radio",
+    //"gamlestadens_fabriker",
+    "hisingsbron"//,
+    //"lindholmens_tekniska_gymnasium"
+  ];
+  addPhotos(places);
   currentSlide(1);
 }
