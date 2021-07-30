@@ -86,3 +86,11 @@ body {
   .demo:hover {
     opacity: 1;
   }
+
+  .side {
+    width: 65%;
+  }
+
+  .thumb {
+    width: 65%;
+  }

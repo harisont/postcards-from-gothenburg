@@ -26,11 +26,28 @@ function showSlides(n) {
 }
 
 function addPhotos(places) {
-  var baseUrl = "raw.githubusercontent.com/harisont/postcards-from-gothenburg/master/photos/"
+  var baseUrl = "https://raw.githubusercontent.com/harisont/postcards-from-gothenburg/master/photos/";
   places.forEach(place => {
-    var side = "a"
-    var imgUrl = baseUrl + place + "/" + side + ".jpg"
-    alert(imgUrl)
+    var side = "a";
+    var imgUrl = baseUrl + place + "/" + side + ".jpg";
+    
+    // add big postcard
+    var aSideImg = document.createElement("img");
+    aSideImg.src = imgUrl;
+    aSideImg.className = "side";
+    var postcard = document.createElement("div");
+    postcard.className = "mySlides";
+    postcard.appendChild(aSideImg);
+    document.getElementById("gallery").appendChild(postcard); 
+
+    // add thumbnail
+    var thumbImg = document.createElement("img");
+    thumbImg.src = imgUrl;
+    thumbImg.className = "demo cursor thumb";
+    var thumbnail = document.createElement("div");
+    thumbnail.className = "column";
+    thumbnail.appendChild(thumbImg);
+    document.getElementById("previews").appendChild(thumbnail); 
   });
 }
 
@@ -39,26 +56,26 @@ function main() {
   // iterate through images because "good" old js doesn't have access to the
   // filesystem... apparently
   var places = [
-    //"alvborgsbron",
+    "alvborgsbron",
     //"gamlestadens_resecentrum_och_varldslitteraturhus",
     //"johanneberg_science_park",
-    //"lyktan",
-    //"chalmers_bibliotek",
-    //"garda_fabriker",
+    "lyktan",
+    "chalmers_bibliotek",
+    "garda_fabriker",
     //"kuggen",
-    //"molndalsfallen",
+    "molndalsfallen",
     //"eriksberg",
     //"gotaverkens_kranar",
-    //"kvibergs_kasermer",
+    "kvibergs_kasermer",
     //"radisson_blu",
-    //"gamlestadens_cykelparkering",
+    "gamlestadens_cykelparkering",
     //"gothia_towers",
     //"lindholmen_science_park",
     //"sveriges_radio",
     //"gamlestadens_fabriker",
     "hisingsbron"//,
     //"lindholmens_tekniska_gymnasium"
-  ]
+  ];
   addPhotos(places);
   currentSlide(1);
 }
