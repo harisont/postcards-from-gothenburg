@@ -1,5 +1,3 @@
-var fs = require('fs');
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,14 +23,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}
-
-function addPhotos() {
-  var files = fs.readdirSync('photos');
-  alert(files)
-}
-
-function main() {
-  addPhotos();
-  currentSlide(1);
 }

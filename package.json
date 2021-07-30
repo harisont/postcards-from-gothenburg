@@ -20,8 +20,5 @@
   "homepage": "https://github.com/harisont/postcards-from-gothenburg#readme",
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  },
-  "dependencies": {
-    "fs": "^0.0.1-security"
   }
 }
