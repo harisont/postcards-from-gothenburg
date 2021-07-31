@@ -25,9 +25,24 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function flip(img) {
+  if (img.src.endsWith("a.jpg")) {
+    img.src = img.src.replace("a.jpg", "b.jpg");
+  }
+  else if (img.src.endsWith("b.jpg")) {
+    img.src = img.src.replace("b.jpg", "c.jpg");
+  }
+  else if (img.src.endsWith("c.jpg")) {
+    img.src = img.src.replace("c.jpg", "a.jpg");
+  }
+  else {
+    console.log("invalid image url");
+  }
+}
+
 function addPhotos(places) {
-  var baseUrl = "https://raw.githubusercontent.com/harisont/postcards-from-gothenburg/master/photos/";
-  places.forEach(place => {
+  var baseUrl = "photos/";
+  places.forEach(function callback(place, n) {
     var side = "a";
     var imgUrl = baseUrl + place + "/" + side + ".jpg";
     
@@ -35,6 +50,7 @@ function addPhotos(places) {
     var aSideImg = document.createElement("img");
     aSideImg.src = imgUrl;
     aSideImg.className = "side";
+    aSideImg.onclick = function() {flip(aSideImg)}
     var postcard = document.createElement("div");
     postcard.className = "mySlides";
     postcard.appendChild(aSideImg);
@@ -44,6 +60,7 @@ function addPhotos(places) {
     var thumbImg = document.createElement("img");
     thumbImg.src = imgUrl;
     thumbImg.className = "demo cursor thumb";
+    thumbImg.onclick = function() {currentSlide(n + 1)}; // god knows why functions need be wrapped in functions
     var thumbnail = document.createElement("div");
     thumbnail.className = "column";
     thumbnail.appendChild(thumbImg);
