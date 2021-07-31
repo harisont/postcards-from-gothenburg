@@ -26,8 +26,9 @@ function showSlides(n) {
 }
 
 function addPhotos(places) {
+  //TODO: use relative path?
   var baseUrl = "https://raw.githubusercontent.com/harisont/postcards-from-gothenburg/master/photos/";
-  places.forEach(place => {
+  places.forEach(function callback(place, n) {
     var side = "a";
     var imgUrl = baseUrl + place + "/" + side + ".jpg";
     
@@ -44,6 +45,7 @@ function addPhotos(places) {
     var thumbImg = document.createElement("img");
     thumbImg.src = imgUrl;
     thumbImg.className = "demo cursor thumb";
+    thumbImg.onclick = function() {currentSlide(n + 1)}; // god knows why functions need be wrapped in functions
     var thumbnail = document.createElement("div");
     thumbnail.className = "column";
     thumbnail.appendChild(thumbImg);
