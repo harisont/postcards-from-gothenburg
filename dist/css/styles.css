@@ -77,7 +77,7 @@ body {
     width: 10%;
   }
   
-  /* Add a transparency effect for thumnbail images */
+  /* Add a transparency effect for thumbnail images */
   .demo {
     opacity: 0.6;
   }
@@ -89,6 +89,10 @@ body {
 
   .side {
     width: 65%;
+  }
+
+  .side:hover {
+    cursor: pointer;
   }
 
   .thumb {
