@@ -27,7 +27,7 @@ npm run deploy
 - [ ] add about/so-called artist statement
 - [ ] prompt user to click on postcards
 - [ ] scale images for fast loading
-- [ ] sort photohgrpahs according to Klara's very much appreciated suggestions
+- [ ] sort photographs according to Klara's very much appreciated suggestions
 - [ ] add special characters (öäå)
 - [x] add homepage
 - [x] add toolbar
