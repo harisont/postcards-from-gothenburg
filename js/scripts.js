@@ -40,6 +40,19 @@ function flip(img) {
   }
 }
 
+function activateArrows() {
+  arrows = document.querySelectorAll(".prev,.next")
+  arrows.forEach(function(arrow) {
+    arrow.style.visibility = "visible";
+  })
+}
+
+function hidePreviews() {
+  document.querySelectorAll(".row").forEach(function(row) {
+    row.style.display = "none"
+  })
+}
+
 function addPhotos(places) {
   var baseUrl = "photos/";
   places.forEach(function callback(place, n) {
@@ -60,11 +73,17 @@ function addPhotos(places) {
     var thumbImg = document.createElement("img");
     thumbImg.src = imgUrl;
     thumbImg.className = "demo cursor thumb";
-    thumbImg.onclick = function() {currentSlide(n + 1)}; // god knows why functions need be wrapped in functions
+    thumbImg.onclick = function() { // god knows why functions need be wrapped in functions
+      activateArrows()
+      hidePreviews()
+      currentSlide(n + 1)
+    }; 
     var thumbnail = document.createElement("div");
     thumbnail.className = "column";
     thumbnail.appendChild(thumbImg);
-    document.getElementById("previews").appendChild(thumbnail); 
+    if (n < 5) document.getElementById("previews1").appendChild(thumbnail); 
+    else if (n >=5 && n < 10) document.getElementById("previews2").appendChild(thumbnail);
+    else document.getElementById("previews3").appendChild(thumbnail);
   });
 }
 
@@ -74,25 +93,19 @@ function main() {
   // filesystem... apparently
   var places = [
     "alvborgsbron",
-    //"gamlestadens_resecentrum_och_varldslitteraturhus",
-    //"johanneberg_science_park",
+    "gamlestadens_resecentrum_och_varldslitteraturhus",
     "lyktan",
-    //"chalmers_bibliotek",
-    //"garda_fabriker",
+    "garda_fabriker",
     "kuggen",
     "molndalsfallen",
-    //"eriksberg",
     "gotaverkens_kranar",
-    //"kvibergs_kasermer",
-    //"radisson_blu",
-    //"gamlestadens_cykelparkering",
-    //"gothia_towers",
+    "kvibergs_kasermer",
+    "gamlestadens_cykelparkering",
+    "gothia_towers",
     "lindholmen_science_park",
-    //"sveriges_radio",
     "gamlestadens_fabriker",
     "hisingsbron"//,
-    //"lindholmens_tekniska_gymnasium"
   ];
   addPhotos(places);
-  currentSlide(1);
+  //currentSlide(1);
 }

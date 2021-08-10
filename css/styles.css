@@ -1,3 +1,7 @@
+html {
+  background-color: #121212;
+}
+
 body {
     font-family: Arial;
     margin: 0;
@@ -9,6 +13,30 @@ body {
   
   img {
     vertical-align: middle;
+  }
+  
+  a {
+    text-decoration: none; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  a:link { 
+    color: lightgray;
+  }
+
+  a:visited { 
+    color: lightgray;
+  }
+
+  a:hover { 
+    color: gray;
+  }
+
+  a:active { 
+    color: gray;
   }
   
   /* Position the image container (needed to position the left and right arrows) */
@@ -42,6 +70,7 @@ body {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    visibility: hidden;
   }
   
   /* Position the "next button" to the right */
@@ -74,7 +103,7 @@ body {
   /* Six columns side by side */
   .column {
     float: left;
-    width: 10%;
+    width: 20%;
   }
   
   /* Add a transparency effect for thumbnail images */
@@ -88,7 +117,7 @@ body {
   }
 
   .side {
-    width: 65%;
+    width: 75%;
   }
 
   .side:hover {
@@ -97,4 +126,14 @@ body {
 
   .thumb {
     width: 100%;
+    padding: 5%;
+  }
+
+  .menu {
+    padding-top: 3%;
+    font-size: larger;
+  }
+
+  #homelink {
+    font-weight: 800;
   }
