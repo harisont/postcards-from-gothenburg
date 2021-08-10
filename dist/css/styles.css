@@ -15,6 +15,30 @@ body {
     vertical-align: middle;
   }
   
+  a {
+    text-decoration: none; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  a:link { 
+    color: lightgray;
+  }
+
+  a:visited { 
+    color: lightgray;
+  }
+
+  a:hover { 
+    color: gray;
+  }
+
+  a:active { 
+    color: gray;
+  }
+  
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
@@ -103,4 +127,13 @@ body {
   .thumb {
     width: 100%;
     padding: 5%;
+  }
+
+  .menu {
+    padding-top: 3%;
+    font-size: larger;
+  }
+
+  #homelink {
+    font-weight: 800;
   }
