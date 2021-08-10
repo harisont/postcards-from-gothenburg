@@ -21,9 +21,13 @@ npm run deploy
 
 ### TODO:
 - [ ] add remaining photographs
-- [ ] dark background
-- [ ] en/sv switch
+- [ ] switch to dark background
+- [ ] switch language
 - [ ] special characters in B sides (äöå)
-- [ ] about/so-called artist statement
+- [ ] add about/so-called artist statement
 - [ ] prompt user to click on postcards
 - [ ] scale images for fast loading
+- [ ] sort photohgrpahs according to Klara's very much appreciated suggestions
+- [ ] add special characters (öäå)
+- [ ] add homepage
+- [ ] add toolbar
