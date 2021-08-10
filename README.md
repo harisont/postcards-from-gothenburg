@@ -21,7 +21,7 @@ npm run deploy
 
 ### TODO:
 - [ ] add remaining photographs
-- [ ] switch to dark background
+- [x] switch to dark background
 - [ ] switch language
 - [ ] special characters in B sides (äöå)
 - [ ] add about/so-called artist statement
@@ -29,5 +29,5 @@ npm run deploy
 - [ ] scale images for fast loading
 - [ ] sort photohgrpahs according to Klara's very much appreciated suggestions
 - [ ] add special characters (öäå)
-- [ ] add homepage
-- [ ] add toolbar
+- [x] add homepage
+- [x] add toolbar
