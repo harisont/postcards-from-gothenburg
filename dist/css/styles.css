@@ -1,7 +1,10 @@
+html {
+  background-color: #121212;
+}
+
 body {
     font-family: Arial;
     margin: 0;
-    background-color: #121212;
   }
   
   * {
@@ -43,6 +46,7 @@ body {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    visibility: hidden;
   }
   
   /* Position the "next button" to the right */
@@ -75,7 +79,7 @@ body {
   /* Six columns side by side */
   .column {
     float: left;
-    width: 10%;
+    width: 20%;
   }
   
   /* Add a transparency effect for thumbnail images */
@@ -89,7 +93,7 @@ body {
   }
 
   .side {
-    width: 65%;
+    width: 75%;
   }
 
   .side:hover {
@@ -98,4 +102,5 @@ body {
 
   .thumb {
     width: 100%;
+    padding: 5%;
   }
