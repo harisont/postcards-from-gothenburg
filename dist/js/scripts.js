@@ -84,14 +84,11 @@ function main() {
     //"eriksberg",
     "gotaverkens_kranar",
     //"kvibergs_kasermer",
-    //"radisson_blu",
     //"gamlestadens_cykelparkering",
     //"gothia_towers",
     "lindholmen_science_park",
-    //"sveriges_radio",
     "gamlestadens_fabriker",
     "hisingsbron"//,
-    //"lindholmens_tekniska_gymnasium"
   ];
   addPhotos(places);
   currentSlide(1);
