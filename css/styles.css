@@ -17,8 +17,6 @@ body {
   
   a {
     text-decoration: none; 
-    padding-top: 5%;
-    padding-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
   }
@@ -117,7 +115,7 @@ body {
   }
 
   .side {
-    width: 75%;
+    width: 65%;
   }
 
   .side:hover {
@@ -130,7 +128,8 @@ body {
   }
 
   .menu {
-    padding-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     font-size: larger;
   }
 
