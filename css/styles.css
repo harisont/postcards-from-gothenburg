@@ -4,7 +4,9 @@ html {
 
 body {
     font-family: Arial;
+    font-size: large;
     margin: 0;
+    color: lightgray;
   }
   
   * {
@@ -135,4 +137,8 @@ body {
 
   #homelink {
     font-weight: 800;
+  }
+
+  #statement {
+    padding: 2%;
   }
