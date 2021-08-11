@@ -93,7 +93,7 @@ function main() {
   // filesystem... apparently
   var places = [
     "alvborgsbron",
-    "gamlestadens_resecentrum_och_varldslitteraturhus",
+    "gamlestadens_resecentrum",
     "lyktan",
     "garda_fabriker",
     "kuggen",
@@ -104,7 +104,9 @@ function main() {
     "gothia_towers",
     "lindholmen_science_park",
     "gamlestadens_fabriker",
-    "hisingsbron"//,
+    "hisingsbron",
+    "johanneberg_science_park",
+    "chalmers_bibliotek"
   ];
   addPhotos(places);
   //currentSlide(1);
