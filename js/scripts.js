@@ -1,3 +1,4 @@
+var showTutorial = true;
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -53,6 +54,17 @@ function hidePreviews() {
   })
 }
 
+function tutorial() {
+  if (showTutorial)
+    alert("Hej Göteborgare! " 
+        + "Känner du inte igen den här platsen? " 
+        + "Klicka på bilden för att få lite information. "
+        + "Du kan också klicka igen för att se ett mer lätt "
+        + "igenkännligt fotografi som tagits på samma plats."
+        )
+  showTutorial = false
+}
+
 function addPhotos(places) {
   var baseUrl = "photos/";
   places.forEach(function callback(place, n) {
@@ -74,9 +86,10 @@ function addPhotos(places) {
     thumbImg.src = imgUrl;
     thumbImg.className = "demo cursor thumb";
     thumbImg.onclick = function() { // god knows why functions need be wrapped in functions
-      activateArrows()
-      hidePreviews()
-      currentSlide(n + 1)
+      activateArrows();
+      hidePreviews();
+      currentSlide(n + 1);
+      tutorial();
     }; 
     var thumbnail = document.createElement("div");
     thumbnail.className = "column";
