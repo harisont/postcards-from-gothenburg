@@ -46,7 +46,7 @@ Sätt att omvandla en arkitektur:
 ## Reflektioner
 ![Älvborgsbrons (reflektion på en porthål)](figures/reflections.jpg)
 
-## Ändrad funktion
+## Funktionsändring
 ![Chalmers biblioteket "som en kyrka"](figures/other-func.jpg)
 
 ## Landmärke A som landmärke B
