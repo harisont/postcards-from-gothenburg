@@ -1,0 +1,8 @@
+Gothia Towers, 
+Mässans gata 24, 
+41251 Göteborg
+SVERIGE/SWEDEN/SVEZIA
+
+sv = Hitta triangeln om du kan!
+it = Trova il triangolo, se ci riesci!
+en = Find the triangle if you can!

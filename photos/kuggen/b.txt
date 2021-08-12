@@ -1,0 +1,8 @@
+Kuggen, 
+Lindholmsplatsen 1, 
+41756 Göteborg
+SVERIGE/SWEDEN/SVEZIA
+
+sv = Endast seriösa Chalmerister får komma in efter kl. 20.00.
+it = Solo ai seriosi studenti di Chalmers è permesso accedere dopo le 20:00.
+en = Only serious Chalmers students are allowed in after 8:00 pm.

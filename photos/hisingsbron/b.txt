@@ -1,0 +1,7 @@
+Hisingsbron, 
+41104 Göteborg
+SVERIGE/SWEDEN/SVEZIA
+
+sv = Denna bro är ny, det är därför du kanske inte känner igen den.
+it = Questo ponte è nuovo, per questo forse non lo riconosci.
+en = This bridge is new, that's why you maybe don't recognise it.
