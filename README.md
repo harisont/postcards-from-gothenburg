@@ -2,14 +2,12 @@
 Postcards from Gothenburg is a photography project carried out during a 
 HDK-Valand course in summer 2021.
 
-A more complete description is coming soon.
-
 ## Website
 Visit the website by clicking [here](https://harisont.github.io/postcards-from-gothenburg/).
 
 ### Disclaimer
-The mediocre code (most of the code actually) comes from W3schools examples.
-The bad code is my own and please don't look at it. Forking is highly discouraged, let's not ever propagate this programming mess.
+The basic slideshow code (which constitutes a good portion of the website) comes from W3schools examples.
+The rest of the code is my own and it is __bad__ so please don't look at it even if you think the website looks good.
 
 ### Deployment (note to self)
 Deployment requires `npm`. 
@@ -20,14 +18,21 @@ npm run deploy
 ```
 
 ### TODO:
-- [ ] add remaining photographs
+- [x] add remaining photographs
 - [x] switch to dark background
 - [ ] switch language
-- [ ] special characters in B sides (äöå)
 - [ ] add about/so-called artist statement
-- [ ] prompt user to click on postcards
+- [x] prompt user to click on postcards
 - [ ] scale images for fast loading
-- [ ] sort photographs according to Klara's very much appreciated suggestions
-- [ ] add special characters (öäå)
+- [x] sort photographs according to Klara's very much appreciated suggestions
+- [x] add special characters (öäå)
 - [x] add homepage
 - [x] add toolbar
+
+## Further documentation and course-related content
+In this repo you can also find:
+
+- the text of my [project proposal](more/project_proposal.md) (in English)
+- the text of my complete [project description](more/project_description.md) (also in English)
+- my [notes](more/literature_review/notes.md) and [essay](more/literature_review/literature_review.md) about the book _Att skriva med ljus_ (in Swedish)
+- my [slides](more/end_presentation/end_presentation.pdf) for the end presentation (in Swedish)
