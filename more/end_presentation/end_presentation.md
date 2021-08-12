@@ -53,7 +53,7 @@ Sätt att omvandla en arkitektur:
 ![Kvibergs kasermerna "som Disneyslottet"](figures/other-landmark.jpg)
 
 ## Slutprodukt
-Webbsida med 3D vykort
+[Webbsida](harisont.github.io/postcards-from-gothenburg/) med 3D vykort
 
 ![](figures/web.jpg)
 
