@@ -11,12 +11,9 @@ theme: mhthm
 - detta är också första gången jag experimenterar med arkitekturfotografi
 
 ## Metod
-Huvudtanke: __lärande genom lek__.
+Huvudtankar: __lärande genom lek__, __systematik__.
 
-Inspiration:
-
-- Raymond Queneau, _Exercices de Style_
-- Gianni Rodari, _Grammatica della Fantasia_
+![](figures/rodari.jpg)
 
 ## Kort om projektet
 (Anti-)vykort från Göteborg:
@@ -37,19 +34,19 @@ Sätt att omvandla en arkitektur:
 # Exemplor
 
 ## Detaljframhävning
-![Kuggen i Lindholmen](figures/details.jpg)
+![Gamlestadens Fabriker](figures/details.png)
 
 ## Okonventionella synvinklar
-![Johanneberg Science park](figures/viewpoints.jpg)
+![Johanneberg Science park](figures/viewpoints.png)
 
 ## Reflektioner
-![Älvborgsbrons (reflektion på en porthål)](figures/reflections.jpg)
+![Älvborgsbrons (reflektion på en porthål)](figures/reflections.png)
 
 ## Funktionsändring
-![Chalmers biblioteket "som en kyrka"](figures/other-func.jpg)
+![Chalmers biblioteket "som en kyrka"](figures/other-func.png)
 
 ## Landmärke A som landmärke B
-![Kvibergs kasermerna "som Disneyslottet"](figures/other-landmark.jpg)
+![Kvibergs kasermerna "som Disneyslottet"](figures/other-landmark.png)
 
 ## Slutprodukt
 [Webbsida](harisont.github.io/postcards-from-gothenburg/) med 3D vykort
