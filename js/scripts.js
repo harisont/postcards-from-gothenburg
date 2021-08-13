@@ -56,7 +56,7 @@ function hidePreviews() {
 
 function tutorial() {
   if (showTutorial)
-    alert("Hej Göteborgare! " 
+    confirm("Hej Göteborgare! " 
         + "Känner du inte igen den här platsen? " 
         + "Klicka på bilden för att få lite information. "
         + "Du kan också klicka igen för att se ett mer lätt "
