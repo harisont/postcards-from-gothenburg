@@ -46,7 +46,7 @@ Sätt att omvandla en arkitektur:
 ![Chalmers biblioteket "som en kyrka"](../figures/other-func.png)
 
 ## Landmärke A som landmärke B
-![Kvibergs kasermerna "som Disneyslottet"](../figures/other-landmark.png)
+![Kvibergs kasermer "som Disneyslottet"](../figures/other-landmark.png)
 
 ## Slutprodukt
 [Webbsida](harisont.github.io/postcards-from-gothenburg/) med 3D vykort
