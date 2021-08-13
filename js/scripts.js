@@ -83,7 +83,8 @@ function addPhotos(places) {
 
     // add thumbnail
     var thumbImg = document.createElement("img");
-    thumbImg.src = imgUrl;
+    var thumbUrl = baseUrl + place + "/thumb.jpg";
+    thumbImg.src = thumbUrl;
     thumbImg.className = "demo cursor thumb";
     thumbImg.onclick = function() { // god knows why functions need be wrapped in functions
       activateArrows();
