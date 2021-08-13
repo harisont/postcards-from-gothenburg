@@ -16,7 +16,7 @@ Huvudtanke: __lärande genom lek__.
 Inspiration:
 
 - Raymond Queneau, _Exercices de Style_
-- Gianni Rodari, _La Grammatica della Fantasia_
+- Gianni Rodari, _Grammatica della Fantasia_
 
 ## Kort om projektet
 (Anti-)vykort från Göteborg:
@@ -29,15 +29,14 @@ Sätt att omvandla en arkitektur:
 
 - framhäva en detalj
 - välja en okonventionell synvinkel
-- visa landmärket i en reflektion i vattnet eller i ett fönster
+- visa landmärket i en reflektion i vattnet eller på ett fönster
 - få en byggnad med en viss funktion (t.ex. en fabrik) att se ut som en byggnad med ett annat syfte (t.ex. en kyrka)
-- visa baksidan av en byggnad i stället för dess fasad
 - få ett landmärke att se ut som ett annat landmärke
 - ...
 
 # Exemplor
 
-## Detaljer
+## Detaljframhävning
 ![Kuggen i Lindholmen](figures/details.jpg)
 
 ## Okonventionella synvinklar

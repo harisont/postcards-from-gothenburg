@@ -1,5 +1,3 @@
-# Vykort från Göteborg
-
 Jag är ingen konstnär, och mitt yrke spelar en viktig roll i detta projekt: jag är mjukvaruutvecklare och arbetar med språkteknik. Då får man säga att jag är mest intresserad av _språk_, vilket avser både programmering och mänskliga språk. 
 
 Projektet inspireras av en bok om kreativt skrivande som har en ganska teknisk inriktning: _Grammatica della Fantasia_ ("Fantasins Grammatik") av Gianni Rodari. Rodari förespråkar __lärande genom lek__ och föreslår en rad kreativa övningar som låter vuxna och barn leka med ord. Målet är, förklarar förfättaren, att se till att alla, oavsett social status, kan använda språket på alla möjliga sätt, inklusive kreativt. "Inte för att alla ska vara konstnärer", skriver han, "utan för att ingen ska vara slav" ¹.
