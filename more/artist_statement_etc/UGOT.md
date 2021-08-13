@@ -1,4 +1,7 @@
 # Vykort från Göteborg
+Arianna Masciolini
+
+---
 
 Jag är ingen konstnär, och mitt yrke spelar en viktig roll i detta projekt (som har en [webbplats](harisont.github.io/postcards-from-gothenburg/) som slutprodukten): jag är mjukvaruutvecklare och arbetar med språkteknik. Då får man säga att jag är mest intresserad av _språk_, vilket avser både programmering och mänskliga språk. 
 
@@ -11,26 +14,27 @@ Ordet _omvandla_ är viktigt, eftersom de "stilövningar" som jag valt är __ark
 ## Detaljframhävning
 En enkel idé är att bara visa en detalj av en byggnad, som i fallet med den här fabriken.
 
-![Gamlestaden Fabriker](../figures/details.png)
+![_Gamlestadens Fabriker_, Arianna Masciolini, 2021](../figures/details.png)
 
 ## Okonventionella synvinklar
 Ett alternativ är att välja en okonventionell synvinkel. Johanneberg Science Park fotograferades till exempel under- och bakifrån.
 
-![Johanneberg Science park](../figures/viewpoints.png)
+![_Johanneberg Science park_, Arianna Masciolini, 2021](../figures/viewpoints.png)
 
 ## Reflektioner
 En annan möjlighet är att inte visa landmärket direkt, utan snarare dess reflektion.
 
-![Älvborgsbron (reflektion på en porthål)](../figures/reflections.png)
+![_Älvborgsbron (reflektion på en porthål)_, Arianna Masciolini, 2021](../figures/reflections.png)
+
 ## Funktionssändring
 Man kan även få en byggnad med en viss funktion (t.e. ett bibliotek) att se ut som en med ett annat syfte (i detta fall en kyrka).
 
-![Kunskapstempeln (Chalmers biblioteket "som en kyrka")](../figures/other-func.png)
+![_Kunskapstempeln (Chalmers biblioteket "som en kyrka")_, Arianna Masciolini, 2021](../figures/other-func.png)
 
 ## "Landmärke A som landmärke B"
 Sist kan man försöka framkalla ett annat, kanske mer välkänt landmärke (Disneyslottet i exemplet).
 
-![Kvibergs kasermer "som Disneyslottet"](../figures/other-landmark.png)
+![_Kvibergs kasermer "som Disneyslottet"_, Arianna Masciolini, 2021](../figures/other-landmark.png)
 
 ---
 
