@@ -11,17 +11,26 @@ Ordet _omvandla_ är viktigt, eftersom de "stilövningar" som jag valt är __ark
 ## Detaljframhävning
 En enkel idé är att bara visa en detalj av en byggnad, som i fallet med den här fabriken.
 
+![Gamlestaden Fabriker](../figures/details.png)
+
 ## Okonventionella synvinklar
 Ett alternativ är att välja en okonventionell synvinkel. Johanneberg Science Park fotograferades till exempel under- och bakifrån.
+
+![Johanneberg Science park](../figures/viewpoints.png)
 
 ## Reflektioner
 En annan möjlighet är att inte visa landmärket direkt, utan snarare dess reflektion.
 
+![Älvborgsbron (reflektion på en porthål)](../figures/reflections.png)
 ## Funktionssändring
 Man kan även få en byggnad med en viss funktion (t.e. ett bibliotek) att se ut som en med ett annat syfte (i detta fall en kyrka).
 
+![Kunskapstempeln (Chalmers biblioteket "som en kyrka")](../figures/other-func.png)
+
 ## "Landmärke A som landmärke B"
 Sist kan man försöka framkalla ett annat, kanske mer välkänt landmärke (Disneyslottet i exemplet).
+
+![Kvibergs kasermer "som Disneyslottet"](../figures/other-landmark.png)
 
 ---
 
