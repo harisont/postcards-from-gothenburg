@@ -13,7 +13,7 @@ theme: mhthm
 ## Metod
 Huvudtankar: __lärande genom lek__, __systematik__.
 
-![](figures/rodari.jpg)
+![](../figures/rodari.jpg)
 
 ## Kort om projektet
 (Anti-)vykort från Göteborg:
@@ -34,23 +34,23 @@ Sätt att omvandla en arkitektur:
 # Exemplor
 
 ## Detaljframhävning
-![Gamlestadens Fabriker](figures/details.png)
+![Gamlestadens Fabriker](../figures/details.png)
 
 ## Okonventionella synvinklar
-![Johanneberg Science park](figures/viewpoints.png)
+![Johanneberg Science park](../figures/viewpoints.png)
 
 ## Reflektioner
-![Älvborgsbrons (reflektion på en porthål)](figures/reflections.png)
+![Älvborgsbrons (reflektion på en porthål)](../figures/reflections.png)
 
 ## Funktionsändring
-![Chalmers biblioteket "som en kyrka"](figures/other-func.png)
+![Chalmers biblioteket "som en kyrka"](../figures/other-func.png)
 
 ## Landmärke A som landmärke B
-![Kvibergs kasermerna "som Disneyslottet"](figures/other-landmark.png)
+![Kvibergs kasermerna "som Disneyslottet"](../figures/other-landmark.png)
 
 ## Slutprodukt
 [Webbsida](harisont.github.io/postcards-from-gothenburg/) med 3D vykort
 
-![](figures/web.jpg)
+![](../figures/web.jpg)
 
 # Frågor?
