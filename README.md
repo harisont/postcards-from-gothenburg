@@ -15,7 +15,7 @@ The rest of the code is my own and it is __bad__ so please don't look at it even
 - [ ] switch language
 - [x] add about/so-called artist statement
 - [x] prompt user to click on postcards
-- [ ] scale images for fast loading
+- [x] scale images for fast loading
 - [x] sort photographs according to Klara's very much appreciated suggestions
 - [x] add special characters (öäå)
 - [x] add homepage
