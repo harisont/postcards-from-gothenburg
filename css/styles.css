@@ -4,145 +4,159 @@ html {
 
 body {
     font-family: Arial;
-    font-size: large;
+    font-size: larger;
     margin: 0;
     color: lightgray;
-  }
+}
+
+p {
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: justify;
+  font-size: larger;
+}
   
-  * {
+* {
     box-sizing: border-box;
-  }
+}
   
-  img {
-    vertical-align: middle;
-  }
+img {
+  vertical-align: middle;
+}
   
-  a {
-    text-decoration: none; 
-    padding-left: 2%;
-    padding-right: 2%;
-  }
+a {
+  text-decoration: none; 
+  padding-left: 2%;
+  padding-right: 2%;
+}
 
-  a:link { 
-    color: lightgray;
-  }
+a:link { 
+  color: lightgray;
+}
 
-  a:visited { 
-    color: lightgray;
-  }
+a:visited { 
+  color: lightgray;
+}
 
-  a:hover { 
-    color: gray;
-  }
+a:hover { 
+  color: gray;
+}
 
-  a:active { 
-    color: gray;
-  }
+a:active { 
+  color: gray;
+}
   
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
   
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-    text-align: center;
-  }
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center;
+}
   
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-    visibility: hidden;
-  }
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  visibility: hidden;
+}
   
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
   
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
   
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 20%;
-  }
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+}
   
-  /* Add a transparency effect for thumbnail images */
-  .demo {
-    opacity: 0.6;
-  }
+/* Add a transparency effect for thumbnail images */
+.demo {
+  opacity: 0.6;
+}
   
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+.active,
+.demo:hover {
+  opacity: 1;
+}
 
-  .side {
-    width: 65%;
-  }
+.side {
+  width: 65%;
+}
 
-  .side:hover {
-    cursor: pointer;
-  }
+.side:hover {
+  cursor: pointer;
+}
 
-  .thumb {
-    width: 100%;
-    padding: 5%;
-  }
+.thumb {
+  width: 100%;
+  padding: 5%;
+}
 
-  .menu {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: larger;
-  }
+.menu {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: larger;
+}
 
-  #homelink {
-    font-weight: 800;
-  }
+#homelink {
+  font-weight: 800;
+}
 
-  #statement {
-    padding: 2%;
-  }
+#statement {
+  padding: 2%;
+}
 
-  #gallery {
-    padding: 1%;
-  }
+#gallery {
+  padding: 1%;
+}
+
+#references {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
