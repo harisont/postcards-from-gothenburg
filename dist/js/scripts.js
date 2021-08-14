@@ -1,77 +1,78 @@
-var showTutorial = true;
-var slideIndex = 1;
-showSlides(slideIndex);
+var showTutorial = true
+var slideIndex = 1
+var currLang = "Svenska"
+var langs = ["Svenska", "English", "Italiano"]
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndex += n)
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides(slideIndex = n)
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var i
+  var slides = document.getElementsByClassName("mySlides")
+  var dots = document.getElementsByClassName("demo")
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].style.display = "none"
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active", "")
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex-1].style.display = "block"
+  dots[slideIndex-1].className += " active"
 }
 
 function hideSlides() {
-  var i;
-  var slides = document.querySelectorAll(".mySlides");
+  var i
+  var slides = document.querySelectorAll(".mySlides")
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = "none"
   }
 }
 
 function flip(img) {
   if (img.src.endsWith("a.jpg")) {
-    img.src = img.src.replace("a.jpg", "b.jpg");
+    img.src = img.src.replace("a.jpg", "b.jpg")
   }
   else if (img.src.endsWith("b.jpg")) {
-    img.src = img.src.replace("b.jpg", "c.jpg");
+    img.src = img.src.replace("b.jpg", "c.jpg")
   }
   else if (img.src.endsWith("c.jpg")) {
-    img.src = img.src.replace("c.jpg", "a.jpg");
+    img.src = img.src.replace("c.jpg", "a.jpg")
   }
   else {
-    console.log("invalid image url");
+    console.log("invalid image url")
   }
 }
 
 function activateArrows() {
   arrows = document.querySelectorAll(".prev,.next")
   arrows.forEach(function(arrow) {
-    arrow.style.visibility = "visible";
+    arrow.style.visibility = "visible"
   })
 }
 
 function inactivateArrows() {
   arrows = document.querySelectorAll(".prev,.next")
   arrows.forEach(function(arrow) {
-    arrow.style.visibility = "hidden";
+    arrow.style.visibility = "hidden"
   })
 }
 
 function hidePreviews() {
   document.querySelectorAll(".row").forEach(function(row) {
-    row.style.display = "none";
+    row.style.display = "none"
   })
 }
 
 function showPreviews() {
   document.querySelectorAll(".row").forEach(function(row) {
-    row.style.display = "table";
+    row.style.display = "table"
   })
 }
 
@@ -87,56 +88,61 @@ function tutorial() {
 }
 
 function addPhotos(places) {
-  var baseUrl = "photos/";
+  var baseUrl = "photos/"
   places.forEach(function callback(place, n) {
-    var side = "a";
-    var imgUrl = baseUrl + place + "/" + side + ".jpg";
+    var side = "a"
+    var imgUrl = baseUrl + place + "/" + side + ".jpg"
     
     // add big postcard
-    var aSideImg = document.createElement("img");
-    aSideImg.src = imgUrl;
-    aSideImg.className = "side";
+    var aSideImg = document.createElement("img")
+    aSideImg.src = imgUrl
+    aSideImg.className = "side"
     aSideImg.onclick = function() {flip(aSideImg)}
-    var postcard = document.createElement("div");
-    postcard.className = "mySlides";
-    postcard.appendChild(aSideImg);
-    document.getElementById("gallery").appendChild(postcard); 
+    var postcard = document.createElement("div")
+    postcard.className = "mySlides"
+    postcard.appendChild(aSideImg)
+    document.getElementById("gallery").appendChild(postcard) 
 
     // add thumbnail
-    var thumbImg = document.createElement("img");
-    var thumbUrl = baseUrl + place + "/thumb.jpg";
-    thumbImg.src = thumbUrl;
-    thumbImg.className = "demo cursor thumb";
+    var thumbImg = document.createElement("img")
+    var thumbUrl = baseUrl + place + "/thumb.jpg"
+    thumbImg.src = thumbUrl
+    thumbImg.className = "demo cursor thumb"
     thumbImg.onclick = function() { // god knows why functions need be wrapped in functions
-      activateArrows();
-      hidePreviews();
-      currentSlide(n + 1);
-      tutorial();
-    }; 
-    var thumbnail = document.createElement("div");
-    thumbnail.className = "column";
-    thumbnail.appendChild(thumbImg);
-    if (n < 5) document.getElementById("previews1").appendChild(thumbnail); 
-    else if (n >=5 && n < 10) document.getElementById("previews2").appendChild(thumbnail);
-    else document.getElementById("previews3").appendChild(thumbnail);
-  });
+      activateArrows()
+      hidePreviews()
+      currentSlide(n + 1)
+      tutorial()
+    } 
+    var thumbnail = document.createElement("div")
+    thumbnail.className = "column"
+    thumbnail.appendChild(thumbImg)
+    if (n < 5) document.getElementById("previews1").appendChild(thumbnail) 
+    else if (n >=5 && n < 10) document.getElementById("previews2").appendChild(thumbnail)
+    else document.getElementById("previews3").appendChild(thumbnail)
+  })
 }
 
 function setOnClickHomeLink(){
   document.getElementById("homelink").onclick = function() {
-    inactivateArrows();
-    showPreviews();
-    hideSlides();
+    inactivateArrows()
+    showPreviews()
+    hideSlides()
   }
 }
 
-function setLangLinks(currLang,langs){
-  var i;
-  var langlinks = document.querySelectorAll(".lang");
-  var otherlangs = langs.filter(function(lang) {return lang != currLang});
+function setLangLinks(){
+  var i
+  var langlinks = document.querySelectorAll(".lang")
+  var otherlangs = langs.filter(function(lang) {return lang != currLang})
   for (i = 0; i < langlinks.length; i++) {
-    langlinks[i].setAttribute("href","harisont.github.io/postcards-from-gothenburg/#" + otherlangs[i]);
-    langlinks[i].innerHTML = otherlangs[i];
+    var newLang = otherlangs[i]
+    langlinks[i].href = "#" + newLang
+    langlinks[i].innerHTML = newLang
+    langlinks[i].onclick = function() {
+      currLang = newLang
+      document.getElementById("aboutlink").href = "about" + newLang + ".html"
+    }
   }
 }
 
@@ -160,10 +166,8 @@ function main() {
     "hisingsbron",
     "johanneberg_science_park",
     "chalmers_bibliotek"
-  ];
-  addPhotos(places);
-  setOnClickHomeLink();
-  var currLang = "Svenska";
-  var langs = ["Svenska", "English", "Italiano"];
-  setLangLinks(currLang,langs);
+  ]
+  addPhotos(places)
+  setOnClickHomeLink()
+  setLangLinks()
 }
