@@ -3,6 +3,56 @@ var slideIndex = 1
 var currLang = "Svenska"
 var langs = ["Svenska", "English", "Italiano"]
 
+// these are directory names and need to be kept updated. They are here to
+// iterate through images because "good" old js doesn't have access to the
+// filesystem... apparently
+var places = [
+  "alvborgsbron",
+  "gamlestadens_resecentrum",
+  "lyktan",
+  "garda_fabriker",
+  "kuggen",
+  "molndalsfallen",
+  "gotaverkens_kranar",
+  "kvibergs_kasermer",
+  "gamlestadens_cykelparkering",
+  "gothia_towers",
+  "lindholmen_science_park",
+  "gamlestadens_fabriker",
+  "hisingsbron",
+  "johanneberg_science_park",
+  "chalmers_bibliotek"
+]
+
+// UI strings
+const instructions = {
+  Svenska: "Hej Göteborgare! " 
+         + "Känner du inte igen den här platsen? " 
+         + "Klicka på bilden för att få lite information. "
+         + "Du kan också klicka igen för att se ett mer lätt "
+         + "igenkännligt fotografi som tagits på samma plats.",
+  English: "Hi! Don't you recognize this place? "
+         + "Click on the picture to get some info. "
+         + "You can even click again to se an easier-to-recognize picture "
+         + "of the same landmark",
+  Italiano: "Non (ri)conosci questo posto? "
+          + "Clicca sulla foto per avere qualche informazione. "
+          + "Cliccando due volte ti sarà mostrata una fotografia dello "
+          + "stesso luogo dall'aspetto più familiare."
+}
+
+const projectName = {
+  Svenska: "Vykort från Göteborg",
+  English: "Postcards from Gothenburg",
+  Italiano: "Cartoline da Göteborg"
+}
+
+const about = {
+  Svenska: "Om projektet",
+  English: "About the project",
+  Italiano: "Il progetto"
+}
+
 function plusSlides(n) {
   showSlides(slideIndex += n)
 }
@@ -78,12 +128,7 @@ function showPreviews() {
 
 function tutorial() {
   if (showTutorial)
-    confirm("Hej Göteborgare! " 
-        + "Känner du inte igen den här platsen? " 
-        + "Klicka på bilden för att få lite information. "
-        + "Du kan också klicka igen för att se ett mer lätt "
-        + "igenkännligt fotografi som tagits på samma plats."
-        )
+    confirm(instructions[currLang])
   showTutorial = false
 }
 
@@ -131,6 +176,11 @@ function setOnClickHomeLink(){
   }
 }
 
+function setMenuText() {
+  document.getElementById("homelink").innerHTML = projectName[currLang]
+  document.getElementById("aboutlink").innerHTML = about[currLang]
+}
+
 function setLangLinks(){
   var i
   var langlinks = document.querySelectorAll(".lang")
@@ -140,34 +190,21 @@ function setLangLinks(){
     langlinks[i].href = "#" + newLang
     langlinks[i].innerHTML = newLang
     langlinks[i].onclick = function() {
+      var newLang = this.innerHTML
       currLang = newLang
       document.getElementById("aboutlink").href = "about" + newLang + ".html"
+      setMenuText()
+      setLangLinks()
     }
   }
 }
 
 function main() {
-  // these are directory names and need to be kept updated. They are here to
-  // iterate through images because "good" old js doesn't have access to the
-  // filesystem... apparently
-  var places = [
-    "alvborgsbron",
-    "gamlestadens_resecentrum",
-    "lyktan",
-    "garda_fabriker",
-    "kuggen",
-    "molndalsfallen",
-    "gotaverkens_kranar",
-    "kvibergs_kasermer",
-    "gamlestadens_cykelparkering",
-    "gothia_towers",
-    "lindholmen_science_park",
-    "gamlestadens_fabriker",
-    "hisingsbron",
-    "johanneberg_science_park",
-    "chalmers_bibliotek"
-  ]
+  var currUrl = window.location.href
+  currLang = currUrl.split("#")[1]
+  if (currLang == null || currLang == "") currLang = "Svenska"
   addPhotos(places)
   setOnClickHomeLink()
   setLangLinks()
+  setMenuText()
 }
