@@ -26,6 +26,14 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function hideSlides() {
+  var i;
+  var slides = document.querySelectorAll(".mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+}
+
 function flip(img) {
   if (img.src.endsWith("a.jpg")) {
     img.src = img.src.replace("a.jpg", "b.jpg");
@@ -48,9 +56,22 @@ function activateArrows() {
   })
 }
 
+function inactivateArrows() {
+  arrows = document.querySelectorAll(".prev,.next")
+  arrows.forEach(function(arrow) {
+    arrow.style.visibility = "hidden";
+  })
+}
+
 function hidePreviews() {
   document.querySelectorAll(".row").forEach(function(row) {
-    row.style.display = "none"
+    row.style.display = "none";
+  })
+}
+
+function showPreviews() {
+  document.querySelectorAll(".row").forEach(function(row) {
+    row.style.display = "table";
   })
 }
 
@@ -101,6 +122,24 @@ function addPhotos(places) {
   });
 }
 
+function setOnClickHomeLink(){
+  document.getElementById("homelink").onclick = function() {
+    inactivateArrows();
+    showPreviews();
+    hideSlides();
+  }
+}
+
+function setLangLinks(currLang,langs){
+  var i;
+  var langlinks = document.querySelectorAll(".lang");
+  var otherlangs = langs.filter(function(lang) {return lang != currLang});
+  for (i = 0; i < langlinks.length; i++) {
+    langlinks[i].setAttribute("href","harisont.github.io/postcards-from-gothenburg/#" + otherlangs[i]);
+    langlinks[i].innerHTML = otherlangs[i];
+  }
+}
+
 function main() {
   // these are directory names and need to be kept updated. They are here to
   // iterate through images because "good" old js doesn't have access to the
@@ -123,5 +162,8 @@ function main() {
     "chalmers_bibliotek"
   ];
   addPhotos(places);
-  //currentSlide(1);
+  setOnClickHomeLink();
+  var currLang = "Svenska";
+  var langs = ["Svenska", "English", "Italiano"];
+  setLangLinks(currLang,langs);
 }
