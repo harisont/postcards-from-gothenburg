@@ -199,6 +199,10 @@ function setLangLinks(){
   }
 }
 
+function setAboutLink(){
+  document.getElementById("aboutlink").href = "about" + currLang + ".html"
+}
+
 function main() {
   var currUrl = window.location.href
   currLang = currUrl.split("#")[1]
@@ -206,5 +210,6 @@ function main() {
   addPhotos(places)
   setOnClickHomeLink()
   setLangLinks()
+  setAboutLink()
   setMenuText()
 }
