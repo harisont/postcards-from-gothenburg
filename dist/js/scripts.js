@@ -86,14 +86,20 @@ function hideSlides() {
 }
 
 function flip(img) {
-  if (img.src.endsWith("a.jpg")) {
-    img.src = img.src.replace("a.jpg", "b.jpg")
+  if (img.src.endsWith("/a.jpg")) {
+    img.src = img.src.replace("/a.jpg", "/b" + currLang + ".jpg")
   }
-  else if (img.src.endsWith("b.jpg")) {
-    img.src = img.src.replace("b.jpg", "c.jpg")
+  else if (img.src.endsWith("/bSvenska.jpg")) {
+    img.src = img.src.replace("/bSvenska.jpg", "/c.jpg")
   }
-  else if (img.src.endsWith("c.jpg")) {
-    img.src = img.src.replace("c.jpg", "a.jpg")
+  else if (img.src.endsWith("/bEnglish.jpg")) {
+    img.src = img.src.replace("/bEnglish.jpg", "/c.jpg")
+  }
+  else if (img.src.endsWith("/bItaliano.jpg")) {
+    img.src = img.src.replace("/bItaliano.jpg", "/c.jpg")
+  }
+  else if (img.src.endsWith("/c.jpg")) {
+    img.src = img.src.replace("/c.jpg", "/a.jpg")
   }
   else {
     console.log("invalid image url")
@@ -193,6 +199,17 @@ function setLangLinks(){
       var newLang = this.innerHTML
       currLang = newLang
       document.getElementById("aboutlink").href = "about" + newLang + ".html"
+      document.querySelectorAll(".side").forEach(function(img) {
+        if (img.src.endsWith("/bSvenska.jpg")) {
+          img.src = img.src.replace("/bSvenska.jpg", "/b" + currLang + ".jpg")
+        }
+        else if (img.src.endsWith("/bEnglish.jpg")) {
+          img.src = img.src.replace("/bEnglish.jpg", "/b" + currLang + ".jpg")
+        }
+        else if (img.src.endsWith("/bItaliano.jpg")) {
+          img.src = img.src.replace("/bItaliano.jpg", "/b" + currLang + ".jpg")
+        }
+      })
       setMenuText()
       setLangLinks()
     }
