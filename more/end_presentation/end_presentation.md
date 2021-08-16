@@ -6,8 +6,8 @@ theme: mhthm
 ---
 
 ## Kort om mig
-- jag är ingen konstnär
-- detta är mitt första försök att arbeta med fotografi på ett systematiskt sätt
+- jag är ingen konstnär \pause
+- detta är mitt första försök att arbeta med fotografi på ett systematiskt sätt \pause
 - detta är också första gången jag experimenterar med arkitekturfotografi
 
 ## Metod
@@ -17,9 +17,11 @@ Huvudtankar: __lärande genom lek__, __systematik__.
 
 ## Kort om projektet
 (Anti-)vykort från Göteborg:
+
+\pause
   
-- icke-turistiska områden, byggnader och landmärken
-- "experimentella" bilder (i par med sina "konventionella" motsvarigheter): Målet är att "__omvandla__" de arkitekturer som man ser varje dag
+- icke-turistiska områden, byggnader och landmärken \pause
+- "experimentella" bilder (i par med sina "konventionella" motsvarigheter): målet är att "__omvandla__" de arkitekturer som man ser varje dag
 
 ## Omvandlingar
 Sätt att omvandla en arkitektur:
