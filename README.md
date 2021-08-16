@@ -9,18 +9,6 @@ Visit the website by clicking [here](https://harisont.github.io/postcards-from-g
 The basic slideshow code (which constitutes a good portion of the website) comes from W3schools examples.
 The rest of the code is my own and it is __bad__ so please don't look at it even if you think the website looks good.
 
-### TODO:
-- [x] add remaining photographs
-- [x] switch to dark background
-- [ ] switch language
-- [x] add about/so-called artist statement
-- [x] prompt user to click on postcards
-- [x] scale images for fast loading
-- [x] sort photographs according to Klara's very much appreciated suggestions
-- [x] add special characters (öäå)
-- [x] add homepage
-- [x] add toolbar
-
 ## Further documentation and course-related content
 In this repo you can also find:
 
