@@ -3,5 +3,5 @@
 SVERIGE/SWEDEN/SVEZIA
 
 sv = På en promenad bland båtarna vid Klippan hittade jag det här vintagefotot.
-it = Camminando tra le barche ormeggiate presso Klippan ho trovato questa fotografia d'epoca.
+it = Passeggiando tra le barche ormeggiate ho trovato questa fotografia d'epoca.
 en = Walking among the boats docked near Klippan I found this vintage photograph.

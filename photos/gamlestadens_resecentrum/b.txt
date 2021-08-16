@@ -5,4 +5,4 @@ SVERIGE/SWEDEN/SVEZIA
 
 sv = Gamla stan eller framtidens stad?
 it = Città vecchia o città del futuro? (nota del traduttore: "Gamla stan" in svedese significa "città vecchia". Gamlestaden è difatti uno dei primi insediamenti dell'area di Goteborg, anche se le sue costruzioni futuristiche sembrano suggerire altrimenti)
-en = Old town or city of the future? (translator's note: in Swedish, "Gamla stan" means "old town". Gamlestaden is in fact one of the earliest settlements in the Gothenburg area, although its futuristic buildings seem to suggest otherwise)
+en = Old town or city of the future? (translator's note: in Swedish, "gamla stan" means "old town". Gamlestaden is in fact one of the earliest settlements in the Gothenburg area, although its futuristic buildings seem to suggest otherwise)
